@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              btnPrimary: "#ED1544",
+              imgBorder: "linear-gradient(180deg, rgba(237, 21, 68, 0.2) 0%, rgba(255, 0, 55, 0) 100%);",
+            },
+            height: {
+              "h-102": "620px",
+            },
+            backgroundImage: {
+            'hero-bg-img-1': "url('./assets/pexels-pixabay-159291.jpg')",
+            'hero-bg-img-2': "url('./assets/pexels-anete-lusina-5239520.jpg')",
+            'newsletter-bg-img-1': "url('./assets/pexels-marcelo-chagas-3324434.jpg')",
+            'newsletter-bg-img-2': "url('./assets/pexels-marcelo-chagas-3324434.jpg  ')",
+            },
+            borderWidth: {
+            '8': '13px',
+            },
+            zIndex: {
+         '  -10': '-10',
+          }
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav
+        class="flex items-center justify-between w-5/6 py-5 mx-auto text-white"
+      >
+        <!-- Menu-Block -->
+        <div class=" sm:hidden">
+          <img src="./assets/menu.png" alt="">
+        </div>
+        <!-- H-logo-BLock -->
+        <div >
+          <a href="#">
+            <img src="./assets/H-Logo.png" alt="" />
+          </a>
+        </div>
+        <!-- H-link-Block -->
+        <div class="hidden sm:block ">
+          <button class="py-2 px-6 mr-2 bg-btnPrimary rounded">Log In</button>
+          <button
+            class="py-2 px-6 font-bold text-sm border-btnPrimary border-2 text-btnPrimary rounded"
+          >
+            Sign Up
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="overflow-x-hidden">
+      <!-- Hero-Section -->
+      <section
+        id="hero"
+        class="relative w-full bg-hero-bg-img-2 sm:bg-hero-bg-img-1 bg-cover bg-left-bottom"
+        style="height: 620px; border-bottom-left-radius: 120px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);"
+      >
+        <!-- bg-gradient -->
+        <div id="bg-gradient" class=" absolute w-full h-full bg-bgGradient opacity-80 z-10" style="background: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(114, 0, 25, 0.8) 100%); border-bottom-left-radius: 120px;" > 
+
+        </div>
+        <!-- Hero-Container -->
+        <div class="relative z-20 h-full w-11/12 ml-auto flex flex-col justify-between items-stretch sm:flex sm:flex-row sm:items-stretch text-white">
+          <!-- left-block -->
+          <div class="sm:w-2/4 self-center sm:self-center mr-4 mt-8">
+            <h1 class=" sm:w-12/12 text-3xl lg:text-5xl sm:text-3xl font-bold ">
+              Discover the world of cigars, whiskey, beer, and wine
+            </h1>
+            <p class="sm:w-11/12 my-8 sm:text-sm lg:text-xl leading-8	 opacity-70">
+              Join a community of like-minded enthusiasts and discover new
+              products through personalized recommendations based on your past
+              ratings and tags.
+            </p>
+            <a href="">
+              <img class="w-3/12 sm:w-5/12 lg:w-2/12	" src="./assets/store-tag-img.png" alt="" />
+            </a>
+          </div>
+          <!-- right-block -->
+          <div class="hidden sm:w-2/4 sm:inline-block self-end">
+            <img class="ml-auto" src="./assets/hero-right-img.png" alt="" />
+          </div>
+           <!-- right-block-sm-devices -->
+           <div class="inline-block w-11/12 sm:w-2/4 -ml-6 sm:hidden self-start ">
+            <img class="" src="./assets/hero-block-img-2.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Search Section -->
+      <section class="mt-2">
+        <!-- Search-Bar -->
+        <div id="search-bar" class="py-3">
+          <form
+            class="w-10/12 mx-auto flex items-center justify-between"
+            action=""
+          >
+            <!-- input -->
+            <div class="w-8/12 sm:w-6/12 flex items-center">
+              <img  class="w-8" src="./assets/search.png" alt="" />
+              <input
+                class="w-full text-sm sm:text-lg py-4 ml-2 sm:ml-6 focus:outline-none"
+                type="text"
+                name=""
+                id=""
+                placeholder="Search for cigars, whiskey, beer, and wine"
+              />
+            </div>
+            <div>
+              <button class="py-2 px-6 sm:px-16 mr-2 text-white bg-btnPrimary rounded">
+                Search
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- Feature Section -->
+      <section id="feature" class="">
+        <!-- Feature Container -->
+        <div class="w-11/12 sm:w-10/12 flex flex-col sm:flex-row mt-10 items-start mx-auto py-6 sm:px-10">
+          <!-- left block -->
+          <div class="relative order-last sm:order-first sm:w-6/12 ml-8 mt-10">
+            <img style="background: linear-gradient(180deg, rgba(237, 21, 68, 0.2) 0%, rgba(255, 0, 55, 0) 100%);"
+                 class="w-9/12 sm:mx-auto p-3 rounded-xl mb-16" src="./assets/feature-img-1.png" alt="" srcset="" />
+            <img style="background: linear-gradient(180deg, rgba(237, 21, 68, 0.2) 0%, rgba(255, 0, 55, 0) 100%);"
+                 class="w-7/12 absolute bottom-0 right-0 p-3 rounded-xl " src="./assets/feature-img-2.png" alt="" srcset="" />
+          </div>
+          <!-- right block -->
+          <div class="order-first sm:order-last	sm:w-6/12 sm:ml-12 ml-8">
+            <h2 class="font-bold text-2xl sm:text-3xl opacity-80 mb-6">
+              Discover something new
+            </h2>
+            <p class="text-sm leading-6">
+              The explore feature of Whatya is a great way to discover new
+              products and brands within the world of cigars, whiskey, beer, and
+              wine. Whether you're looking for something specific or just want
+              to browse and see what catches your eye, the explore feature has
+              something for everyone.
+            </p>
+            <div class="flex items-center mt-6">
+              <img src="./assets/check-circle.png" alt="" srcset="" />
+              <h3 class="text-sm ml-3">
+                Search for specific products or brands
+              </h3>
+            </div>
+            <div class="flex items-center mt-4">
+              <img src="./assets/check-circle.png" alt="" srcset="" />
+              <h3 class="text-sm ml-3">
+                Browse through recommendations based on their past ratings and
+                tags
+              </h3>
+            </div>
+            <div class="flex items-center mt-4">
+              <img src="./assets/check-circle.png" alt="" srcset="" />
+              <h3 class="text-sm ml-3">
+                Discover new products and brands through the app's curated lists
+                and collections
+              </h3>
+            </div>
+            <div class="flex items-center mt-4">
+              <img src="./assets/check-circle.png" alt="" srcset="" />
+              <h3 class="text-sm ml-3">
+                Get an overview of each product's key details and ratings from
+                other users
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Community Section -->
+      <section id="community" class="relative  bg-cover bg-center" style="height: 550px; background-image: url(./assets/pexels-tembela-bohle-1089930.jpg)" >
+         <!-- bg-gradient -->
+         <div id="bg-gradient-community" class=" absolute w-full h-full bg-bgGradient opacity-80 z-10" style=" background: 
+         linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(114, 0, 25, 0.8) 100%);" > 
+ 
+         </div>
+        <!-- Community Container -->
+        <div
+          class="relative z-20 flex flex-col items-center justify-center py-16 mx-auto text-center text-white bg-no-repeat bg-cover"
+        >
+          <!-- Top block -->
+          <div>
+            <h1 class="font-bold text-3xl mb-4">Join the community</h1>
+            <p class="w-9/12 sm:w-6/12 mx-auto opacity-70 leading-8 mb-8">
+              One of the most exciting aspects of Whatya is the opportunity to
+              connect with other cigar, whiskey, beer, and wine enthusiasts.
+              Whether you're looking for recommendations or just want to see
+              what others are trying and enjoying, the app's social feed is the
+              place to be.
+            </p>
+          </div>
+          <!-- Bottom block -->
+          <div class="w-9/12 mx-auto grid grid-cols-1 sm:grid-cols-4 gap-5">
+            <!-- 1st -->
+            <div
+              class="flex flex-col items-center justify-center py-12 px-8 bg-white text-black rounded-lg"
+            >
+              <img src="./assets/share-2.png" alt="" srcset="" />
+              <p class="text-sm w-11/12 mt-4">
+                Share their experiences and photos of the products they try
+              </p>
+            </div>
+            <!-- 2nd -->
+            <div
+              class="flex flex-col items-center justify-center py-12 px-8 bg-white text-black rounded-lg"
+            >
+              <img src="./assets/users.png" alt="" srcset="" />
+              <p class="text-sm w-11/12 mt-4">
+                Follow other users and see what they're posting.
+              </p>
+            </div>
+            <!-- 3rd -->
+            <div
+              class="flex flex-col items-center justify-center py-12 px-8 bg-white text-black rounded-lg"
+            >
+              <img src="./assets/message-circle.png" alt="" srcset="" />
+              <p class="text-sm w-11/12 mt-4">
+                Comment and like on other users' posts.
+              </p>
+            </div>
+            <!-- 4th -->
+            <div
+              class="flex flex-col items-center justify-center py-12 px-8 bg-white text-black rounded-lg"
+            >
+              <img src="./assets/thumbs-up.png" alt="" srcset="" />
+              <p class="text-sm w-11/12 mt-4">
+                Connect with others who share similar interests in cigars,
+                whiskey, beer, and wine.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Product Section -->
+      <section id="product" class="relative">
+        <!-- Product Container -->
+        <div id="product-container" class="w-full h-60 flex flex-row sm:w-10/12 sm:mx-auto sm:grid sm:grid-cols-5 mt-20 sm:gap-x-2 sm:items-start ">
+          <!-- 1st -->
+          <div
+            
+            class=" sm:w-full flex flex-col items-start justify-center bg-white text-black rounded-lg"
+          >
+            <img class="w-full" style="width: 220px;" src="./assets/product-img-1-1.png" alt="" srcset="" />
+            <h3 class="w-11/12 font-bold mb-2 mt-4">Lure reprehenderit</h3>
+            <div>
+              <img  src="./assets/Rating.png" alt="" />
+            </div>
+          </div>
+          <!-- 2nd -->
+          <div
+            class=" sm:w-full flex flex-col items-start justify-center bg-white text-black rounded-lg"
+          >
+            <img src="./assets/product-img-2.png" alt="" srcset="" />
+            <h3 class="w-11/12 font-bold mb-2 mt-4">Lure reprehenderit</h3>
+            <div>
+              <img src="./assets/Rating.png" alt="" />
+            </div>
+          </div>
+          <!-- 3rd -->
+          <div
+            class=" sm:w-full flex flex-col items-start justify-center bg-white text-black rounded-lg"
+          >
+            <img src="./assets/product-img-3.png" alt="" srcset="" />
+            <h3 class="w-11/12 font-bold mb-2 mt-4">quis nostrum</h3>
+            <div>
+              <img src="./assets/Rating.png" alt="" />
+            </div>
+          </div>
+          <!-- 4th -->
+          <div
+            class="hidden sm:block sm:w-full flex flex-col  items-start justify-center bg-white text-black rounded-lg"
+          >
+            <img src="./assets/product-img-3.png" alt="" srcset="" />
+            <h3 class="w-11/12 font-bold mb-2 mt-4">quis nostrum</h3>
+            <div>
+              <img src="./assets/Rating.png" alt="" />
+            </div>
+          </div>
+          <!-- 5th -->
+          <div
+            class="hidden sm:block sm:w-full flex flex-col items-start justify-center bg-white text-black rounded-lg"
+          >
+            <img src="./assets/product-img-4.png" alt="" srcset="" />
+            <h3 class="w-11/12 font-bold mb-2 mt-4">Ut enim ad minima</h3>
+            <div>
+              <img src="./assets/Rating.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Experience Section -->
+      <section id="experience">
+        <!-- ExperienceContainer -->
+        <div class="w-11/12 sm:w-10/12 flex flex-col sm:flex-row  items-start mx-auto py-6 px-4 sm:px-10 mt-20">
+          <!-- left block -->
+          <div class="sm:w-2/5 mr-8">
+            <h2 class="font-bold text-2xl sm:text-3xl opacity-80 mb-6">
+              Track your experience
+            </h2>
+            <p class="text-sm leading-6">
+              One of the key features of Whatya is the ability to track your
+              experiences with cigars, whiskey, beer, and wine. By rating and
+              tagging the products you try, you can create a personalized
+              profile of your preferences.
+            </p>
+            <div class="flex items-center mt-6">
+              <img src="./assets/check-circle.png" alt="" srcset="" />
+              <h3 class="text-sm ml-3">
+                Keep track of the products you have tried and your thoughts on
+                them
+              </h3>
+            </div>
+            <div class="flex items-center mt-4">
+              <img src="./assets/check-circle.png" alt="" srcset="" />
+              <h3 class="text-sm ml-3">
+                View your past ratings and tags in your personal profile
+              </h3>
+            </div>
+            <div class="flex items-center mt-4">
+              <img src="./assets/check-circle.png" alt="" srcset="" />
+              <h3 class="text-sm ml-3">
+                Use this data to get personalized recommendations for new
+                products to try based on your preferences
+              </h3>
+            </div>
+          </div>
+          <!--  right block -->
+          <div class="mt-10 sm:mt-0 sm:w-3/5 text-center">
+            <img
+              style="background: linear-gradient(180deg, rgba(237, 21, 68, 0.2) 0%, rgba(255, 0, 55, 0) 100%);"
+              class="mx-auto p-3 rounded-xl"
+              src="./assets/experience-img-1.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Business Section -->
+      <section class="mb-32" id="business">
+        <!-- business Container -->
+        <div class="w-11/12 flex flex-col sm:flex-row sm:w-10/12 items-start mx-auto py-6 sm:px-10 px-4 mt-20">
+          <!-- left block -->
+          <div class="sm:w-6/12 my-8 sm:mt-0 sm:mb-0 order-last sm:order-first text-center ">
+            <img
+              style="background: linear-gradient(180deg, rgba(237, 21, 68, 0.2) 0%, rgba(255, 0, 55, 0) 100%);"
+              class="mr-auto p-3 rounded-xl"
+              src="./assets/business-img-1.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <!--  right block -->
+          <div class="order-first sm:order-last sm:w-6/12 mr-8">
+            <h2 class="font-bold text-2xl sm:text-3xl opacity-80 mb-6">
+              Whatya For Business
+            </h2>
+            <p class="text-sm leading-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+            <button
+              class="py-2 px-16 mr-2 mt-8 text-sm text-white bg-btnPrimary rounded"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- NewsLetter Section -->
+      <section
+        id="news-letter"
+        class="relative w-full bg-newsletter-bg-img-2  sm:bg-newsletter-bg-img-1 sm:bg-center bg-cover bg-left-top mt-52"
+      >
+       <!-- bg-gradient -->
+       <div id="bg-gradient" class=" absolute w-full h-full bg-bgGradient opacity-80 z-10" style="background: 
+       linear-gradient(0deg,  rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.5)); " > 
+       </div>
+        <!-- Newsletter Container -->
+        <div
+          id="newsletter-container"
+          class="relative z-30 w-10/12 mx-auto flex flex-col sm:flex-row items-stretch justify-between text-white sm:h-auto pt-12 sm:pt-0"
+        >
+          <!-- 1st-Block -->
+          <div class="self-end justify-self-end w-11/12 sm:self-start order-last sm:order-first -mt-48">
+            <img src="./assets/newsletter-img.png" alt="" />
+          </div>
+          <!-- 2nd-Block -->
+          <div class="self-start sm:self-center order-first sm:order-last">
+            <h1 class="text-xl font-bold">Join our newsletter</h1>
+            <form action="" class="flex items-center justify-center">
+              <input
+                class="w-full text-black py-2 px-4 my-4 focus:outline-none rounded-full"
+                type="email"
+                placeholder="Enter your email"
+              />
+              <button
+                class="-ml-8 py-2 px-4 text-white bg-btnPrimary rounded-full"
+              >
+                Submit
+              </button>
+            </form>
+            <h3 class="text-sm">
+              Download the app by clicking the link below :
+            </h3>
+            <a href="#">
+              <img class="w-6/12 mt-4" src="./assets/store-tag-img.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footet -->
+    <footer class="bg-btnPrimary text-white">
+      <nav
+        class="flex items-center justify-between w-5/6 py-5 mx-auto text-white"
+      >
+        <!-- F-logo-BLock -->
+        <div>
+          <a href="#">
+            <img src="./assets/footer-logo.png" alt="" />
+          </a>
+        </div>
+        <!-- F-Copyright-Block  -->
+        <div class="hidden sm:block">
+          <h3 class="text-sm opacity-80">© 2023 Whatya|  Powered by Whatya</h3>
+        </div>
+       
+        <!-- F-link-Block -->
+        <div class="flex items-center space-x-4">
+          <a href="#">
+            <img src="./assets/fb-img.png" alt="">
+          </a>
+          <a href="#">
+            <img src="./assets/twt-img.png" alt="">
+          </a>
+          <a href="#">
+            <img src="./assets/ind-img.png" alt="">
+          </a>
+          <a href="#">
+            <img src="./assets/Inst-img.png" alt="">
+          </a>
+        </div>
+      </nav>
+       <!-- F-Copyright-Block-sm-viewport  -->
+       <div class="block sm:hidden pb-8">
+        <h3 class="text-center text-sm opacity-80">© 2023 Whatya| Powered by Whatya</h3>
+      </div>
+    </footer>
+  </body>
+</html>
